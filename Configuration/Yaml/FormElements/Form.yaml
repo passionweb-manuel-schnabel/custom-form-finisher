@@ -1,0 +1,27 @@
+TYPO3:
+  CMS:
+    Form:
+      prototypes:
+        standard:
+          formElementsDefinition:
+            Form:
+              formEditor:
+                editors:
+                  900:
+                    selectOptions:
+                      1673531000:
+                        value: StripContent
+                        label: formEditor.elements.Form.finisher.StripContent.editor.header.label
+                propertyCollections:
+                  finishers:
+                    1673531000:
+                      identifier: StripContent
+                      editors:
+                        100:
+                          identifier: header
+                          templateName: Inspector-CollectionElementHeaderEditor
+                          label: formEditor.elements.Form.finisher.StripContent.editor.header.label
+                        9999:
+                          identifier: removeButton
+                          templateName: Inspector-RemoveElementEditor
+

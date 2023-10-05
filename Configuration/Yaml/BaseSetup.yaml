@@ -1,0 +1,14 @@
+TYPO3:
+  CMS:
+    Form:
+      persistenceManager:
+        allowedExtensionPaths:
+          100: EXT:custom_form_finisher/Resources/Private/Forms/
+        allowSaveToExtensionPaths: true
+        allowDeleteFromExtensionPaths: false
+      prototypes:
+        standard:
+          finishersDefinition:
+            StripContent:
+              implementationClassName: 'Passionweb\CustomFormFinisher\Domain\Finishers\StripContentFinisher'
+

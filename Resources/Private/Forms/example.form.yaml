@@ -1,0 +1,60 @@
+
+renderingOptions:
+  submitButtonLabel: Submit
+type: Form
+identifier: custom-form-finisher
+label: Custom form finisher
+prototypeName: standard
+finishers:
+  - identifier: StripContent
+  -
+    options:
+      subject: Custom form finisher example
+      recipients:
+        '{email}': '{fullname}'
+      senderAddress: '{email}'
+      senderName: '{fullname}'
+      addHtmlPart: true
+      attachUploads: true
+      translation:
+        language: Default
+      title: 'Custom form finisher example'
+    identifier: EmailToReceiver
+  -
+    options:
+      pageUid: '1'
+      additionalParameters: ''
+      fragment: ''
+    identifier: Redirect
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    type: Page
+    identifier: page-1
+    label:
+    renderables:
+      -
+        defaultValue: ''
+        type: Text
+        identifier: fullname
+        label: Fullname
+      -
+        defaultValue: ''
+        type: Email
+        identifier: email
+        label: 'Email address'
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+        validators:
+          -
+            identifier: EmailAddress
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Textarea
+        identifier: message
+        label: Message

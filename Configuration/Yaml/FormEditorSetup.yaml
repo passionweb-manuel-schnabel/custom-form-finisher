@@ -1,0 +1,18 @@
+imports:
+
+ - { resource: "./FormElements/Form.yaml" }
+
+ - { resource: "./Finishers/StripContent.yaml" }
+
+TYPO3:
+  CMS:
+    Form:
+      prototypes:
+        standard:
+          formEditor:
+            translationFiles:
+              1673535999: 'EXT:custom_form_finisher/Resources/Private/Language/Database.xlf'
+
+
+
+

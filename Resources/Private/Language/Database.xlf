@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="EXT:custom_form_finisher/Resources/Private/Language/Database.xlf" date="2016-08-21T20:15:32Z" product-name="custom_form_finisher">
+     <header/>
+        <body>
+            <!-- STRIP CONTENT OF ENTERED DATA -->
+            <trans-unit id="tt_content.finishersDefinition.StripContent.label" resname="tt_content.finishersDefinition.StripContent.label" xml:space="preserve">
+                <source>Strip content of entered data</source>
+            </trans-unit>
+            <trans-unit id="formEditor.elements.Form.finisher.StripContent.editor.header.label" resname="formEditor.elements.Form.finisher.StripContent.editor.header.label" xml:space="preserve">
+               <source>Strip content of entered data</source>
+           </trans-unit>
+        </body>
+    </file>
+</xliff>

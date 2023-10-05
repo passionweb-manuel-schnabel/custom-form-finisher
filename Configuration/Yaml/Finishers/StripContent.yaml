@@ -1,0 +1,13 @@
+TYPO3:
+  CMS:
+    Form:
+      prototypes:
+        standard:
+          finishersDefinition:
+            StripContent:
+              formEditor:
+                iconIdentifier: form-finisher
+                label: formEditor.elements.Form.finisher.StripContent.editor.header.label
+              FormEngine:
+                label: tt_content.finishersDefinition.StripContent.label
+

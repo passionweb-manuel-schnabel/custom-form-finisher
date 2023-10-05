@@ -1,0 +1,12 @@
+# Extend EXT:form configuration
+
+// Frontend form configuration
+plugin.tx_form.settings.yamlConfigurations {
+	1673535123 = EXT:custom_form_finisher/Configuration/Yaml/BaseSetup.yaml
+}
+// Backend form configuration
+module.tx_form.settings.yamlConfigurations {
+	1673535123 = EXT:custom_form_finisher/Configuration/Yaml/BaseSetup.yaml
+	1673535124 = EXT:custom_form_finisher/Configuration/Yaml/FormEditorSetup.yaml
+}
+
